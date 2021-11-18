@@ -1,0 +1,63 @@
+.audiocontainer{
+    width: 600px;
+    box-shadow: 0 4px 8px -4px rgb(0, 0,0,0.3);
+    font-family: "Roboto" , sans-serif;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.audiocontainer .audio{
+    background: #222;
+    width: 100%;
+    height: 130%;
+}
+
+.audiocontainer .name{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    color: #fff;
+    background: rgb(0, 0,0,0.7);
+    padding: 8px 32px;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.audiocontainer .btn {
+    padding: 16px;
+    width: 24px;
+    margin-right: 8px;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .audiocontainer .volumeslider {
+    width: 200px;
+  }
+
+  .audiocontainer .buttons .play .fa-pause {
+    display: none;
+  }
+  
+  .audiocontainer .buttons .play.playing .fa-pause {
+    display: inline-block;
+  }
+  
+  .audiocontainer .buttons .play.play.playing .fa-play {
+    display: none;
+  }
+  
+  .audiocontainer .buttons .mute .fa-volume-mute {
+    display: none;
+  }
+  
+  
+.audiocontainer .buttons .mute.muted .fa-volume-mute {
+    display: inline-block;
+  }
+  
+  .audiocontainer .buttons .mute.muted .fa-volume-up {
+    display: none;
+  }
+  

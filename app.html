@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio WaveForm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="app.css"/>
+
+</head>
+<body>
+    <div class="audiocontainer">
+        <div class="name">The Name of Audio </div>
+        <div class="audio"></div>
+
+        <div class="buttons">
+            <span class="play btn">
+                <i class="fas fa-play"></i>
+                <i class="fas fa-pause"></i>
+            </span>
+
+            <span class="stop btn">
+                <i class="fas fa-stop"></i>
+            </span>
+
+            <span class="mute btn">
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-volume-mute"></i>
+            </span>
+
+            <input
+          type="range"
+          min="0"
+          max="10"
+          step="1"
+          value="5"
+          class="volumeslider"
+        />
+            <span class="forward">
+                <i class="fas fa-forward"></i>
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
